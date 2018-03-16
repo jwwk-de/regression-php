@@ -10,7 +10,7 @@
 * There will be a separate thread for php 5.6
 
 ## Requirements
-* composer dependency (Carbon DateTime, random-bytes)
+* composer dependency (random-bytes)
 * >= PHP 7.0
 
 ## Install

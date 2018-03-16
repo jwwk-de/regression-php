@@ -2,8 +2,6 @@
 
 namespace Regression;
 
-use Carbon\Carbon;
-
 /**
  * Class AbstractRegression
  *
@@ -52,7 +50,7 @@ abstract class AbstractRegression implements InterfaceRegression
         $this->regressionModel->setObjectId(\bin2hex(random_bytes(10)));
         $this->regressionModel->setResultSequence($this->resultSequence);
         $this->regressionModel->setSourceSequence($this->sourceSequence);
-        $this->regressionModel->setCreateDate(Carbon::now()->toDateTimeString());
+        $this->regressionModel->setCreateDate((new \DateTime())->format('Y-m-d H:i:s'));
     }
 
     /**
